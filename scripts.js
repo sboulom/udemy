@@ -29,7 +29,7 @@ function getMilk (money) {
 
     console.log("moveLeft");
     console.log("moveLeft");
-    console.log("moveDown");
+    console.log("moveDown");¡™
     console.log("moveDown");
     console.log("moveDown");
     console.log("moveDown");
@@ -40,5 +40,18 @@ function getMilk (money) {
     return money % 1.5;
 }
 
+function calcBottle(startingMoney, costPerBottle){
+    var numberOfBottles = Math.floor(startngMoney / costPerBottle);
+
+    return numberOfBottles;
+}
+
 var change = getMilk(4);
 console.log(change);
+
+function calcChange(startingAmount, costPerBottle){
+    var change = startingAmount % costPerBottle;
+    return change;
+}
+
+console.log("Hello, here is your " + getMilk(5) + " change.")
