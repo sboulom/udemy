@@ -99,3 +99,60 @@
 //     alert("Your love score is " + loveCal + "%!" + " You are not in love")
 
 // }
+
+//leap year
+// function isLeap(year){
+   
+//     if(year % 4 === 0 ){
+//         if(year % 100 === 0){
+//             if(year % 400 === 0){
+//                 return "Leap year."
+//             } else{
+//             return "Not leap year.";
+//             }
+//         } else {
+//             return "Leap year."
+//         }
+//     } else {
+//         return "Not leap year."
+//     }
+  
+
+// }
+
+//check guest list
+
+// var guestList =["Angela", "Jack" , "Pam" , "James", "Lara", "Jason"];
+
+// var guestName = prompt("What is your name?");
+
+// if(guestList.includes(guestName)){
+//     alert("Welcome to the party!");
+// } else {
+//     alert("Hit the road jack!")
+// }
+
+//Fizz buzz
+
+var output = [];
+var count = 1; //created var to keep track of count
+
+function fizzBuzz(){
+    if(count % 3 === 0 && count % 5 === 0){
+        output.push("FizzBuzz");
+    }
+    else if(count % 3 === 0){
+        output.push("Fizz");
+    } 
+    else if(count % 5 === 0){
+        output.push("Buzz");
+    }
+    
+    else {
+        output.push(count);
+    }
+    count++; //increment
+    console.log(output);
+}
+
+fizzBuzz();
