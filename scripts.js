@@ -75,3 +75,27 @@
 // var bmi = bmiCalculator(65, 1.8); 
 // console.log(bmi)
 
+//Psuedo Random Number Generator//
+
+// var n = Math.random();
+// n = Math.floor(n *6) + 1;
+// console.log(n);
+
+//Love Calculator
+// prompt("What is your name?");
+// prompt("What is the name of your love?");
+
+// var loveCal = Math.random();
+// loveCal = Math.floor(loveCal * 100) +1;
+
+// if(loveCal > 70){
+//     alert("Your love score is " + loveCal + "%!" + " Get a Room!")
+// } 
+// if (loveCal > 30 && loveCal <= 70){
+//     alert("Your love score is " + loveCal + "%!" + " Get a Room!")
+// }
+
+// else{
+//     alert("Your love score is " + loveCal + "%!" + " You are not in love")
+
+// }
