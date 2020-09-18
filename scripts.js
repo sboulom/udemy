@@ -134,25 +134,36 @@
 
 //Fizz buzz
 
-var output = [];
-var count = 1; //created var to keep track of count
+// var output = [];
+// var count = 1; //created var to keep track of count
 
-function fizzBuzz(){
-    if(count % 3 === 0 && count % 5 === 0){
-        output.push("FizzBuzz");
-    }
-    else if(count % 3 === 0){
-        output.push("Fizz");
-    } 
-    else if(count % 5 === 0){
-        output.push("Buzz");
-    }
+// function fizzBuzz(){
+//     if(count % 3 === 0 && count % 5 === 0){
+//         output.push("FizzBuzz");
+//     }
+//     else if(count % 3 === 0){
+//         output.push("Fizz");
+//     } 
+//     else if(count % 5 === 0){
+//         output.push("Buzz");
+//     }
     
-    else {
-        output.push(count);
-    }
-    count++; //increment
-    console.log(output);
-}
+//     else {
+//         output.push(count);
+//     }
+//     count++; //increment
+//     console.log(output);
+// }
 
-fizzBuzz();
+// fizzBuzz();
+
+//Random Diners
+
+// function whosPaying(names){
+//     var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+//     var numberOfPeople = names.length;
+//     var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+//     var randomPerson = names[randomPersonPosition];
+
+//     return randomPerson + " is going to buy lunch today!";
+// }   
