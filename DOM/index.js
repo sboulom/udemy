@@ -1,1 +1,1 @@
-alert("sup")
+document.querySelector("button").style.backgroundColor = "red";
