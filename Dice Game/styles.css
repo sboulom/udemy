@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
@@ -29,11 +29,11 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 90%;
 }
 
 footer {
-  margin-top: 5%;
+  margin-top: 10%;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
