@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #393E46;
+  background-color: lavender;
 }
 
 h1 {
@@ -34,8 +34,9 @@ img {
 
 footer {
   margin-top: 10%;
-  color: #EEEEEE;
+  color: black;
   text-align: center;
   font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
 
 }
