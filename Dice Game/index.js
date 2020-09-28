@@ -15,15 +15,33 @@ var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 
-var randomNumber3 = Math.floor(Math.random() * 6) +1;
-
-var randomImageSource3 = "images/dice" + randomNumber3 + ".png";
-
-document.querySelectorAll("img")[2].setAttribute("src", randomImageSource3);
 
 
-var randomNumber4 = Math.floor(Math.random() * 6) +1;
 
-var randomImageSource4 = "images/dice" + randomNumber4 + ".png";
 
-document.querySelectorAll("img")[3].setAttribute("src", randomImageSource4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//code for the 3rd and 4th image. remember to uncomment in HTML file if you uncomment this 
+// var randomNumber3 = Math.floor(Math.random() * 6) +1;
+
+// var randomImageSource3 = "images/dice" + randomNumber3 + ".png";
+
+// document.querySelectorAll("img")[2].setAttribute("src", randomImageSource3);
+
+
+// var randomNumber4 = Math.floor(Math.random() * 6) +1;
+
+// var randomImageSource4 = "images/dice" + randomNumber4 + ".png";
+
+// document.querySelectorAll("img")[3].setAttribute("src", randomImageSource4);
