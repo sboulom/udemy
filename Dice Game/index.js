@@ -17,7 +17,13 @@ document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 var randomNumber3 = Math.floor(Math.random() * 6) +1;
 
-var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
+var randomImageSource3 = "images/dice" + randomNumber3 + ".png";
 
-document.querySelectorAll("img")[2].setAttribute("src", randomImageSource2);
+document.querySelectorAll("img")[2].setAttribute("src", randomImageSource3);
 
+
+var randomNumber4 = Math.floor(Math.random() * 6) +1;
+
+var randomImageSource4 = "images/dice" + randomNumber4 + ".png";
+
+document.querySelectorAll("img")[3].setAttribute("src", randomImageSource4);
