@@ -94,14 +94,14 @@ function makeSound(key){
 //     languages: ["English, Turkish"],
 // }
 
-// function HouseKeeper(name, yearExperience, hasWorkPerit, languages){
-//     this.name = name;
-//     this.yearExperience = yearExperience;
-//     this.hasWorkPerit = hasWorkPerit;
-//     this.languages = languages;
-//     this.clean = function (){
-//         alert("Cleaning in progress");
-//     }
-// }
+function HouseKeeper(name, yearExperience, hasWorkPerit, languages){
+    this.name = name;
+    this.yearExperience = yearExperience;
+    this.hasWorkPerit = hasWorkPerit;
+    this.languages = languages;
+    this.clean = function (){
+        alert("Cleaning in progress");
+    }
+}
 
-// var houseKeeper1 = new HouseKeeper("Jane", 12, true, ["Mandarin", "English", "Spanish"]);
+var houseKeeper1 = new HouseKeeper("Jane", 12, true, ["Mandarin", "English", "Spanish"]);
