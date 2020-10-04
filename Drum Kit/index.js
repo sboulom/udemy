@@ -118,18 +118,3 @@ function makeSound(key){
 // } REMOVE!!!
 
 // var houseKeeper1 = new HouseKeeper("Jane", 12, true, ["Mandarin", "English", "Spanish"]);
-
-
-
-// function HouseKeeper(name, yearExperience, hasWorkPerit, languages){
-//     this.name = name;
-//     this.yearExperience = yearExperience;
-//     this.hasWorkPerit = hasWorkPerit;
-//     this.languages = languages;
-//     this.clean = function (){
-//         alert("Cleaning in progress");
-//     }
-// } REMOVE 
-
-// var houseKeeper1 = new HouseKeeper("Jane", 12, true, ["Mandarin", "English", "Spanish"]);
-
