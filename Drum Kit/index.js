@@ -6,6 +6,7 @@ for (var j = 0; j < numberOfDrumButtons; j++) {
         var buttonInnerHTML = this.innerHTML;
 
         makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
     })
     
 }
@@ -13,6 +14,7 @@ for (var j = 0; j < numberOfDrumButtons; j++) {
 document.addEventListener("keydown", function(event){
   
     makeSound(event.key)
+
 })
 
 function makeSound(key){
@@ -56,6 +58,10 @@ function makeSound(key){
         default:
             break;
 }}
+
+function buttonAnimation(){
+
+}
 // var audio = new Audio("sounds/tom-1.mp3");
 // audio.play();
 
@@ -102,19 +108,6 @@ function makeSound(key){
 //     this.clean = function (){
 //         alert("Cleaning in progress");
 //     }
-// } remove!!!!
-
-// var houseKeeper1 = new HouseKeeper("Jane", 12, true, ["Mandarin", "English", "Spanish"]);
-
-
-// function HouseKeeper(name, yearExperience, hasWorkPerit, languages){
-//     this.name = name;
-//     this.yearExperience = yearExperience;
-//     this.hasWorkPerit = hasWorkPerit;
-//     this.languages = languages;
-//     this.clean = function (){
-//         alert("Cleaning in progress");
-//     }
-// } REMOVE!!!
+// } 
 
 // var houseKeeper1 = new HouseKeeper("Jane", 12, true, ["Mandarin", "English", "Spanish"]);
