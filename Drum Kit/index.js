@@ -1,20 +1,23 @@
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
-
-for (var j = 0; j < numberOfDrumButtons; j++) {
+    //event listener for mouse press
+for (var i = 0; i < numberOfDrumButtons; i++) {
     
-    document.querySelectorAll("button")[j].addEventListener("click", function (){
+    document.querySelectorAll("button")[i].addEventListener("click", function (){
         var buttonInnerHTML = this.innerHTML;
+        // console.log(this); logs mouse press
 
         makeSound(buttonInnerHTML);
+
         buttonAnimation(buttonInnerHTML);
     })
     
 }
-
+    // event listener for key down press
 document.addEventListener("keydown", function(event){
   
     makeSound(event.key)
-
+    // console.log(event.key); logs key pressed
+    buttonAnimation(event.key);
 })
 
 function makeSound(key){
@@ -59,9 +62,20 @@ function makeSound(key){
             break;
 }}
 
-function buttonAnimation(){
+function buttonAnimation(currentKey){
+
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed")
+    }, 100);
 
 }
+
+ 
+
+
+
 // var audio = new Audio("sounds/tom-1.mp3");
 // audio.play();
 
