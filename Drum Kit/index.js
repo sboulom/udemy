@@ -62,13 +62,15 @@ function makeSound(key){
             break;
 }}
 
+
+//function with set timeout to remove animation and added class.
 function buttonAnimation(currentKey){
 
     var activeButton = document.querySelector("." + currentKey);
     activeButton.classList.add("pressed");
     setTimeout(function(){
         activeButton.classList.remove("pressed")
-    }, 100);
+    }, 1500);
 
 }
 
