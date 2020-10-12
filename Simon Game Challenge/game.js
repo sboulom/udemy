@@ -9,17 +9,17 @@ var userClickedPattern = [];
 $(".btn").click(function(){
 
     var userChosenColor = $(this).attr("id");
-    //
-    userClickedPattern.push(userChosenColor);
-    //console.log(userClickedPattern)
-
     
-})
+    userClickedPattern.push(userChosenColor);
+    console.log(userClickedPattern)
+
+
+});
 
 
 
 function nextSequence(){
-    console.log(randomNumber);
+    // console.log(randomNumber);
     //generate numbers 1-4
     var randomNumber = Math.floor(Math.random() * 4);
     //uses line 2 array and selects random number assinged in array
