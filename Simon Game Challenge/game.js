@@ -6,12 +6,12 @@ var gamePattern = [];
 var userClickedPattern = [];
 
 
-$(".btn").click(function(){
+$(".btn").click(function() {
 
     var userChosenColor = $(this).attr("id");
     
     userClickedPattern.push(userChosenColor);
-    console.log(userClickedPattern)
+    console.log(userClickedPattern);
 
 
 });
