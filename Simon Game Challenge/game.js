@@ -7,14 +7,23 @@ var userClickedPattern = [];
 
 
 $(".btn").click(function() {
-
+    //
     var userChosenColor = $(this).attr("id");
     
     userClickedPattern.push(userChosenColor);
-    console.log(userClickedPattern);
 
+    //console logs the pattern clicked by user.
+    console.log(userClickedPattern);
+    playSound(userChosenColor);
 
 });
+
+
+//function for sound and user chosen color
+function playSound(){
+
+
+}
 
 
 
