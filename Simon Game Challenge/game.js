@@ -13,8 +13,9 @@ $(".btn").click(function() {
     userClickedPattern.push(userChosenColor);
 
     //console logs the pattern clicked by user.
-    console.log(userClickedPattern);
+
     playSound(userChosenColor);
+    animatePress(userChosenColor);
 
 });
 
@@ -39,10 +40,19 @@ function nextSequence(){
 function playSound(name){
     
    //variable to create audio sound with random chosen color + file path.
-   var audio = new Audio ("sounds/" + randomChosenColor + ".mp3");
+   var audio = new Audio ("sounds/" + name + ".mp3");
 
    audio.play();
 
 
+}
+
+function animatePress(currentColor){
+
+    $("#" + currentColor).addClass("pressed");
+    setTimeout(function(){
+        $("#" + currentColor).removeClass("pressed");
+        
+    }, 100);
 }
 
