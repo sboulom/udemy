@@ -19,14 +19,6 @@ $(".btn").click(function() {
 });
 
 
-//function for sound and user chosen color
-function playSound(){
-
-
-}
-
-
-
 function nextSequence(){
     // console.log(randomNumber);
     //generate numbers 1-4
@@ -39,15 +31,18 @@ function nextSequence(){
 
     //using jQuery to select button with randomChosen color var then flashing it with fade in and out.
     $("#" + randomChosenColor).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
-    
-
-    //variable to create audio sound with random chosen color + file path.
-    var audio = new Audio ("sounds/" + randomChosenColor + ".mp3");
-
-    audio.play();
-
-
-
-
+    playSound(randomChosenColor)
 }    
+
+
+//function for sound and user chosen color
+function playSound(name){
+    
+   //variable to create audio sound with random chosen color + file path.
+   var audio = new Audio ("sounds/" + randomChosenColor + ".mp3");
+
+   audio.play();
+
+
+}
 
