@@ -5,9 +5,22 @@ var gamePattern = [];
 
 var userClickedPattern = [];
 
+var level = 0;
+
+//need a way to check if game is started by kep press. 
+var started = false;
+
+//using jQuery to detect keypress
+$(document).keypress(function(){
+    //once key press, it will display starting level. 
+    if(!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+});
 
 $(".btn").click(function() {
-    //
     var userChosenColor = $(this).attr("id");
     
     userClickedPattern.push(userChosenColor);
@@ -16,11 +29,19 @@ $(".btn").click(function() {
 
     playSound(userChosenColor);
     animatePress(userChosenColor);
-
+    checkAnswer(userClickedPattern.length - 1);
 });
 
 
+
+
 function nextSequence(){
+
+    userClickedPattern = [];
+    //to increase level inside function
+    level++;
+
+    $("#level-title").text("Level " + level);
     // console.log(randomNumber);
     //generate numbers 1-4
     var randomNumber = Math.floor(Math.random() * 4);
