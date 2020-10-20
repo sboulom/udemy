@@ -5,6 +5,7 @@ var gamePattern = [];
 
 var userClickedPattern = [];
 
+
 var level = 0;
 
 //need a way to check if game is started by kep press. 
@@ -16,8 +17,9 @@ $(document).keypress(function(){
     if(!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
-        started = true;
+        started = false;
     }
+
 });
 
 $(".btn").click(function() {
@@ -26,6 +28,7 @@ $(".btn").click(function() {
     userClickedPattern.push(userChosenColor);
 
     //console logs the pattern clicked by user.
+
 
     playSound(userChosenColor);
     animatePress(userChosenColor);
