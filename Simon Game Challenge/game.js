@@ -5,7 +5,6 @@ var gamePattern = [];
 
 var userClickedPattern = [];
 
-
 var level = 0;
 
 //need a way to check if game is started by kep press. 
@@ -17,7 +16,7 @@ $(document).keypress(function(){
     if(!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
-        started = false;
+        started = true;
     }
 
 });
@@ -44,8 +43,18 @@ function checkAnswer(currentLevel){
             }, 1000)
         }
     } else {
-
         console.log("wrong");
+
+        playSound("wrong");
+
+        $("body").addClass("game-over");
+        setTimeout(function(){
+            $("body").removeClass("game-over");
+
+        }, 200);
+
+        $("level-title").text("Game Over, Press Any Kee to Restart");
+
     }
 
 }
