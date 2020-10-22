@@ -54,10 +54,10 @@ function checkAnswer(currentLevel){
         }, 200);
 
         $("level-title").text("Game Over, Press Any Kee to Restart");
-
+        startOver();
     }
 
-}
+};
 
 
 function nextSequence(){
@@ -79,7 +79,7 @@ function nextSequence(){
     //using jQuery to select button with randomChosen color var then flashing it with fade in and out.
     $("#" + randomChosenColor).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColor)
-}    
+};    
 
 
 //function for sound and user chosen color
@@ -91,7 +91,7 @@ function playSound(name){
    audio.play();
 
 
-}
+};
 
 function animatePress(currentColor){
 
@@ -100,5 +100,14 @@ function animatePress(currentColor){
         $("#" + currentColor).removeClass("pressed");
         
     }, 100);
-}
+};
+
+function startOver(){
+
+    level = 0;
+    gamePattern = [];
+    started = false;
+    
+};
+
 
