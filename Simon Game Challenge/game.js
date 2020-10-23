@@ -101,7 +101,7 @@ function animatePress(currentColor){
         
     }, 100);
 };
-
+//Inside this function, you'll need to reset the values of level, gamePattern and started variables.
 function startOver(){
 
     level = 0;
