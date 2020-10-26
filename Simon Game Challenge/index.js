@@ -9,7 +9,7 @@ $(".btn").click(function(){
     
     //whatever user selected from user chosen color, you'll push to the user clicked pattern
     userClickedPattern.push(userChosenColor)
-
+    playSound(userChosenColor);
 
 })
 
@@ -24,11 +24,15 @@ function nextSequence(){
     gamePattern.push(randomChosenColor);
 
     $("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
+    playSound(randomChosenColor);
 
+}
 
-    //js way of playing sound. folder + variable to select file name + mp3 
+function playSound(name){
+
+    //js way of playing sound. folder + variable to selectfile name + mp3 
     var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
 
     audio.play();
 
-}
+};
