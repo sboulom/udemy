@@ -29,7 +29,6 @@ function nextSequence(){
 }
 
 function playSound(name){
-
     //js way of playing sound. folder + variable to selectfile name + mp3 
     var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
 
