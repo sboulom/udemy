@@ -27,6 +27,10 @@ $(".btn").click(function(){
 
 });
 
+function checkAnswer(currentLevel){
+
+    
+}
 
 function nextSequence(){
 
@@ -40,6 +44,7 @@ function nextSequence(){
 
     $("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColor);
+    animatePress(userChosenColor);
 
 };
 
