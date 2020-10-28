@@ -1,7 +1,16 @@
 var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
+var level = 0;
 
+$(document).keypress(function(){
+    if (!started){
+
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+})
 
 $(".btn").click(function(){
     //used to store the id that the user clicks
@@ -16,6 +25,11 @@ $(".btn").click(function(){
 
 function nextSequence(){
 
+    level ++;
+
+
+    $("#level-title").text("Level " + level);
+    
     var randomNumber = Math.floor(Math.random() *4);
     var randomChosenColor = buttonColor[randomNumber];
 
