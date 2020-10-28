@@ -1,7 +1,7 @@
 var buttonColors = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
-
+//user sequence
 var userClickedPattern = [];
 
 var level = 0;
@@ -25,11 +25,13 @@ $(".btn").click(function(){
     userClickedPattern.push(userChosenColor)
     playSound(userChosenColor);
 
+    checkAnswer(userClickedPattern.length-1);
+
 });
 
 function checkAnswer(currentLevel){
 
-    
+
 }
 
 function nextSequence(){
