@@ -48,6 +48,8 @@ function checkAnswer(currentLevel){
     playSound("wrong");
 
     $("body").addClass("game-over");
+
+    startOver();
 };
 
 function nextSequence(){
@@ -81,5 +83,12 @@ function animatePress(currentColor){
     $("#" + currentColor).addClass("pressed");
     setTimeout(function(){
         $("#" + currentColor).removeClass("pressed");
-    }, 100);
+    }, 100);¢
 };
+
+function startOver(){
+
+    level = 0;
+    gamePattern = [];
+    started = false;
+}
