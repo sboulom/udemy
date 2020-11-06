@@ -59,10 +59,10 @@ function checkAnswer(currentLevel){
 
 };
 
-
 function nextSequence(){
 
     userClickedPattern = [];
+    //to increase level inside function
     //to increase level inside function
     level++;
 
