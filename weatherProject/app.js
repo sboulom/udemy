@@ -1,3 +1,4 @@
+const { response } = require("express");
 const express = require("express");
 const https = require("https");
 
@@ -9,14 +10,17 @@ app.get("/", function(req, res){
     const url = "https://api.openweathermap.org/data/2.5/weather?q=paris&units=imperial&appid=7980901759d3b1066013adeb63af74a7"
 
     https.get(url, function(response){
-        console.log(response); 
-    })
+        console.log(response.statusCode); 
+
+        response.on("data", function(data){
+        const weatherData = JSON.parse(data);
+        console.log(weatherData); 
+
+    });
+    });
 
     res.send("HELLO server is up");
-
-
-
-})
+});
 
 
 
