@@ -14,6 +14,11 @@ app.get("/", function(req, res){
 
         response.on("data", function(data){
         const weatherData = JSON.parse(data);
+        const object = {
+            name: "Steven",
+            favoriteFood: "Pizza",
+        }
+        console.log(JSON.stringify(object));
         console.log(weatherData); 
 
     });
