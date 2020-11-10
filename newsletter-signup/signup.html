@@ -30,19 +30,20 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="./style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <form class="form-signin">
+    
+    <form action="/" class="form-signin" method="post">
   <img class="mb-4" id="signUpImage" src="./images/outdoor.jpg" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Signup to My Newsletter</h1>
-
-  <input type="text" class="form-control" placeholder="First Name" required autofocus>
-  <input type="text" class="form-control" placeholder="Last Name" required>
-  <input type="email" id="inputPassword" class="form-control" placeholder="Email" required>
+    <!-- autofocus makes it glow around the input -->
+  <input type="text" name="fName" class="form-control top" placeholder="First Name" required autofocus>
+  <input type="text" name="lName" class="form-control middle" placeholder="Last Name" required>
+  <input type="email" name="email" class="form-control bottom" placeholder="Email" required>
   
   
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Me Up</button>
   <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
 </form>
 </body>
