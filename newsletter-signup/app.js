@@ -44,6 +44,13 @@ app.post("/", function(req, res){
     }
 
     const request = https.request(url, options, function(response){
+
+        if(response.statusCode === 200){
+            res.send(__dirname + "/success.html")
+        } else {
+            res.send(__dirname + "/failure.html")
+        }
+
         response.on("data", function(data){
             console.log(JSON.parse(data));
         })
