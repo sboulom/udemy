@@ -13,9 +13,9 @@ app.get("/", function(req, res){
     var today = new Date();
     var currentDay = today.getDay();
     if(currentDay === 6 || currentDay === 0){
-        res.send("IT'S MY FRIDAY!!!");
+        res.send("<h1>IT'S MY FRIDAY!!!</h1>")
     } else {
-        res.send("Almost the weekend...")
+        res.sendFile(__dirname + "/index.html")
 
     }
 })
