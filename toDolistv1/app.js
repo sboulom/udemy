@@ -38,14 +38,15 @@ app.get("/", function(req, res){
         case 6:
             day = "Saturday";
             break;
+        default:
+            console.log("Error: current day is equal to current day");
                              
     }
-
     // if(currentDay === 6 || currentDay === 0){
     //     day = "WEEKEND!!!";
     // } else {
     //     day = "Weekday!"
-        
+
     // }
 
 
