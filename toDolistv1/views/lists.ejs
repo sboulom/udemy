@@ -6,15 +6,27 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-   
-  <h1><%= kindOfDay %></h1>
 
-  <ul>
- <% for (var i = 0; i<newListItems.length; i++){ %>
+<body>
+
+   <div class="box" id="heading">
+    <h1><%= kindOfDay %></h1>
+   </div>
+
+   <div class="box">
+    <% for (var i = 0; i<newListItems.length; i++){ %
+   </div>
+
+   <div class="item">
+    
+
+   </div>
+
     <li><%= newListItems[i] %>  </li>
  <% } %>
   </ul>
+
+
   <form action="/" method="post">
     <input type="text" name="newItem">
     <button type="submit">Add</button>
