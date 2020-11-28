@@ -4,7 +4,10 @@ const https = require("https");
 
 //package allow to look at post request and fetch data based on name of input. ex. cityName
 const bodyParser = require("body-parser");
+const date = require(__dirname + "/date.js");
 
+
+console.log(date);
 
 const app = express();
 
@@ -18,16 +21,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res){
 
-    var today = new Date();
-
-    var options = {
-        weekday: "long",
-        day: "numeric",
-        month: "long"
-    }
-
-    var day = today.toLocaleDateString("en-US", options);
-
+    var day = date();
 
     res.render("lists", {listTitle: day, newListItems: items})
 })
