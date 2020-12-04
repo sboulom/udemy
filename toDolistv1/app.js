@@ -6,9 +6,6 @@ const https = require("https");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
 
-
-console.log(date());
-
 const app = express();
 
 let items = ["Buy Food", "Cook Food", "Eat Food"];
@@ -21,7 +18,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res){
 
-    var day = date();
+    var day = date.getDate();
 
     res.render("lists", {listTitle: day, newListItems: items})
 })

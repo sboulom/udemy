@@ -1,4 +1,4 @@
-module.exports.getDate =  function(){
+exports.getDate =  function(){
 
    var today = new Date(); 
     var options = {
@@ -11,7 +11,7 @@ module.exports.getDate =  function(){
 
 }
 
-module.exports.getDay = function(){
+exports.getDay = function(){
 
     let today = newDate();
 
