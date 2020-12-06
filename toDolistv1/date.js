@@ -1,7 +1,7 @@
 exports.getDate =  function(){
 
-   var today = new Date(); 
-    var options = {
+   const today = new Date(); 
+    const options = {
        weekday: "long", 
        day: "numeric",
        month: "long"
@@ -13,9 +13,9 @@ exports.getDate =  function(){
 
 exports.getDay = function(){
 
-    let today = newDate();
+    const today = newDate();
 
-    let options = {
+    const options = {
         weekday: "long"
     }
     return today.toLocaleDateString("en-US", options);
